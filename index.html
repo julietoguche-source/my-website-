@@ -1,4 +1,3 @@
-
 <html lang="en">
 <style>
   
@@ -33,20 +32,24 @@ margin: 0;
       margin-bottom: 10px;
     }
     nav {
-      background-color: #0077b6;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      background-color: #0a9396;
-    }
+  background-color: #ffffff; /* white background */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #008080; /* teal underline */
+}
+
+nav a {
+  color: #008080 !important;   /* force teal green text */
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: bold !important; /* force bold */
+}
+
+nav a:hover {
+  background-color: #e0f2f1; /* soft teal background on hover */
+  color: #004d4d !important;  /* darker teal text */
+}
     .hero {
       text-align: center;
       padding: 60px 20px;
@@ -176,171 +179,438 @@ margin: 0;
     <a href="#projects" class="btn btn-secondary">View My Impact</a>
   </section>
 
-  <!-- About Me Section -->
-  <section class="section" id="about">
-    <h2>About Me</h2>
-    <p><img src="https://i.postimg.cc/SxFHCRyH/1769788264678.jpg" alt="Juliet Ibrahim" style="max-width: 200px; border-radius: 50%; float: right; margin: 0 0 20px 20px;">
-      I am Juliet Ibrahim, an Urban Planner, Data Analyst, and Climate Resilience Advocate. 
-      My work focuses on building sustainable cities, applying ecohydrological principles to flood management, 
-      and using data-driven insights to guide urban development, strengthen healthcare systems, and support community resilience.
-    </p>
-    <p>
-      Recognized as a Climate Champion of Nigeria by the United Nations Sustainable Development Solutions Network (SDSN) Nigeria 
-      and as a fellow of the African Group of Negotiators Experts Support (AGNES) Climate Leadership Fellowship, 
-      I bring together technical expertise and leadership in advancing sustainable development goals. 
-      I combine my background in urban planning and data analysis with a passion for empowering communities through education, 
-      innovation, and climate action.
-    </p>
-    <p>
-      I am motivated by a vision of resilient cities where knowledge and technology help people thrive 
-      in the face of environmental and social challenges.
-    </p>
-  </section>
-
-  
-  <h2>Voluntary Work </h2>
-  <p class="intro">
-    Highlights from my climate change education, awareness, and advocacy activities.
-  </p>
-  <div class="gallery">
-    <div class="voluntary-item">
-      <img src="https://i.postimg.cc/L5MffDBZ/IMG-20241016-111242-571-1609606711.jpg" alt="Climate Change Workshop 1">
-      <h3>Climate Change Education, Awareness & Advocacy</h3>
-    </div>
-   <div class="voluntary-item">
-      <img src="https://i.postimg.cc/L4Bgwz3C/IMG-20241016-075039-436-677598938.jpg" alt="Climate Change Workshop 3">
-      <h3>School Climate Workshop</h3>
-    </div>
-    <div class="voluntary-item">
-      <img src="https://i.postimg.cc/nrZjMzpQ/IMG-20241015-130340-507-191866631.jpg" alt="Climate Change Workshop 5">
-      <h3>Renewable Energy Awareness</h3>
-    </div>
-    <div class="voluntary-item">
-      <img src="https://i.postimg.cc/rsLWWjCw/IMG-20241015-130429-297-1207106649.jpg" alt="Climate Change Workshop 6">
-      <h3>Youth Climate Advocacy</h3>
-    </div>
-    <div class="voluntary-item">
-      <img src="https://i.postimg.cc/5yMvvgq6/IMG-20241015-130630-041-1124815538.jpg" alt="Climate Change Workshop 7">
-      <h3>Girls in STEM & Sustainability</h3>
-    </div>
-  </div>
-</section>
-
-<style>
-.voluntary-work {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 40px;
-  background: #4CAF50; /* Green background for the whole section */
-  border-radius: 8px;
-  color: #fff;
-}
-.voluntary-work h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 28px;
-  font-weight: bold;
-  color: #fff;
-}
-.voluntary-work .intro {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #f1f1f1;
-}
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-.voluntary-item {
-  background: #fff;
-  padding: 15px;
-  border-radius: 6px;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-.voluntary-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: 10px;
-}
-.voluntary-item h3 {
-  font-weight: bold;
-  font-size: 18px;
-  color: #4CAF50;
-  background: #e8f5e9;
-  padding: 8px;
-  border-radius: 4px;
-}
-</style>
-}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Juliet Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Juliet Oguche</title>
   <style>
-    .video-section {
-      max-width: 1000px;
-      margin: 40px auto;
-      text-align: center;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
     }
-    .video-section h2 {
-      font-size: 28px;
+
+* About Me Section */
+    #about {
+      padding: 50px;
+      background-color: #f9f9f9;
+    }
+
+    #about h2 {
+      font-size: 2em;
       margin-bottom: 20px;
-      color: #4CAF50;
+      color: #2c3e50; /* primary color */
+    }
+
+    .about-container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .about-content {
+      display: flex;
+      flex-direction: row; /* always side by side */
+      align-items: flex-start;
+    }
+
+    .about-photo {
+      max-width: 180px; /* slightly smaller for mobile comfort */
+      border-radius: 50%;
+      margin: 0 20px 20px 0;
+      flex-shrink: 0; /* prevent image from shrinking */
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .about-text p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Mission Statement */
+    .mission {
+      font-size: 1.3em;
       font-weight: bold;
+      margin-top: 30px;
+      text-align: center;
+      color: #16a085; /* accent color */
     }
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      gap: 20px;
+
+    /* Call-to-Action Button */
+    .cta {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #e67e22; /* button color */
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
     }
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 ratio */
-      height: 0;
-      overflow: hidden;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+
+    .cta:hover {
+      background-color: #cc7a00; /* darker shade for hover */
     }
-    .video-container iframe {
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      border-radius: 8px;
-   
-
-
-  .
-  .slider {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    height: 30px; /* height of one line */
-    overflow: hidden;
-    position: relative;
-  }
-
-  .slider li {
-    position: absolute;
-    width: 100%;
-    opacity: 0;
-    animation: slide 9s infinite;
-  }
-
-  .slider li:nth-child(1) { animation-delay: 0s; }
-  .slider li:nth-child(2) { animation-delay: 3s; }
-  .slider li:nth-child(3) { animation-delay: 6s; }
-
-  
-</style>
+  </style>
 </head>
 <body>
 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Juliet Oguche</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* About Me Section */
+    #about {
+      padding: 50px;
+      background-color: #f9f9f9;
+    }
+
+    #about h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #2c3e50; /* primary color */
+      text-align: center;
+    }
+
+    .about-container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .about-photo {
+      max-width: 220px;
+      border-radius: 50%;
+      margin: 0 20px 20px 0;
+      flex-shrink: 0;
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .about-text p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Mission Statement */
+    .mission-heading {
+      font-size: 1.8em;
+      margin-top: 40px;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .mission {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-top: 10px;
+      text-align: center;
+      color: #16a085; /* accent color */
+    }
+
+    /* Call-to-Action Button */
+    .cta {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #e67e22; /* button color */
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta:hover {
+      background-color: #cc7a00; /* darker shade for hover */
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+      .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .about-photo {
+        margin: 0 0 20px 0;
+      }
+
+      .about-text {
+        min-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- About Me Section -->
+  <section class="section" id="about">
+    <div class="about-container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="https://i.postimg.cc/SxFHCRyH/1769788264678.jpg" alt="Juliet Oguche" class="about-photo">
+        <div class="about-text">
+          <p>
+            I am Juliet Ibrahim, an Urban Planner, Data Analyst, and Climate Resilience Advocate. 
+            My work focuses on building sustainable cities, applying ecohydrological principles to flood management, 
+            and using data-driven insights to address climate change, guide urban development, and strengthen healthcare systems.
+          </p>
+          <p>
+            My research interests focus on climate adaptation and resilient urban planning, participatory land use planning, 
+            and flood risk management using ecohydrological approaches. I am also engaged in exploring land governance and relocation 
+            planning in vulnerable communities, environmental justice and adaptation policy, and the dynamics of urban informality 
+            and infrastructure governance in the Global South.
+          </p>
+          <a href="#contact" class="cta">Work With Me</a>
+        </div>
+      </div>
+
+      <!-- Mission Statement -->
+      <h3 class="mission-heading">Mission Statement</h3>
+      <p class="mission">
+        Using knowledge, technology, and collaboration to design cities that are resilient, inclusive, and sustainable.
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>
+<style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Juliet's Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+    }
+
+    .voluntary-work {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 40px;
+      background: #4CAF50;
+      border-radius: 8px;
+      color: #fff;
+    }
+
+    .voluntary-work h2 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .voluntary-work .intro {
+      text-align: center;
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: #f1f1f1;
+    }
+
+    /* Impact Numbers */
+    .impact-numbers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .impact-block {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+
+    .impact-block.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .impact-block .number {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #2e7d32;
+      margin-bottom: 10px;
+    }
+
+    .impact-block p {
+      color: #333;
+      font-size: 1em;
+    }
+
+    /* Gallery Styling */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .voluntary-item {
+      background: #fff;
+      padding: 15px;
+      border-radius: 6px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+
+    .voluntary-item.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .voluntary-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .voluntary-item h3 {
+      font-weight: bold;
+      font-size: 18px;
+      color: #4CAF50;
+      background: #e8f5e9;
+      padding: 8px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="voluntary-work" id="voluntary-work">
+    <h2>Voluntary Work & Impact</h2>
+    <p class="intro">
+      Through climate education, awareness campaigns, and advocacy, I have empowered communities, schools, and youth groups to take action for sustainability.
+    </p>
+
+    <!-- Impact Numbers -->
+    <div class="impact-numbers">
+      <div class="impact-block">
+        <span class="number" data-target="2000">0</span>
+        <p>Students Reached</p>
+      </div>
+      <div class="impact-block">
+        <span class="number" data-target="1200">0</span>
+        <p>Pupils Empowered</p>
+      </div>
+      <div class="impact-block">
+        <span class="number" data-target="5">0</span>
+        <p>Communities Inspired</p>
+      </div>
+      <div class="impact-block">
+        <span class="number" data-target="300">0</span>
+        <p>Girls Mentored</p>
+      </div>
+    </div>
+
+    <!-- Voluntary Work Gallery -->
+    <div class="gallery">
+      <div class="voluntary-item">
+        <img src="https://i.postimg.cc/L5MffDBZ/IMG-20241016-111242-571-1609606711.jpg" alt="Climate Change Workshop">
+        <h3>Climate Change Education</h3>
+      </div>
+      <div class="voluntary-item">
+        <img src="https://i.postimg.cc/L4Bgwz3C/IMG-20241016-075039-436-677598938.jpg" alt="School Climate Workshop">
+        <h3>School Climate Workshop</h3>
+      </div>
+      <div class="voluntary-item">
+        <img src="https://i.postimg.cc/nrZjMzpQ/IMG-20241015-130340-507-191866631.jpg" alt="Renewable Energy Awareness">
+        <h3>Renewable Energy Awareness</h3>
+      </div>
+      <div class="voluntary-item">
+        <img src="https://i.postimg.cc/rsLWWjCw/IMG-20241015-130429-297-1207106649.jpg" alt="Youth Climate Advocacy">
+        <h3>Youth Climate Advocacy</h3>
+      </div>
+      <div class="voluntary-item">
+        <img src="https://i.postimg.cc/5yMvvgq6/IMG-20241015-130630-041-1124815538.jpg" alt="Girls in STEM & Sustainability">
+        <h3>Girls in STEM & Sustainability</h3>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Animate numbers
+    function animateCount(counter) {
+      const target = +counter.getAttribute("data-target");
+      let current = 0;
+      const duration = 2000;
+      const stepTime = 20;
+      const increment = target / (duration / stepTime);
+
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          counter.innerText = target;
+          clearInterval(timer);
+        } else {
+          counter.innerText = Math.ceil(current);
+        }
+      }, stepTime);
+    }
+
+    // Observer for fade-in + staggered count-up
+    const blocks = document.querySelectorAll(".impact-block, .voluntary-item");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          const element = entry.target;
+          setTimeout(() => {
+            element.classList.add("visible");
+            const counter = element.querySelector(".number");
+            if (counter) {
+              counter.innerText = "0";
+              animateCount(counter);
+            }
+          }, index * 200); // stagger delay (200ms between each)
+        }
+      });
+    }, { threshold: 0.3 });
+
+    blocks.forEach(block => observer.observe(block));
+  </script>
   <section class="video-section">
     <h2>Video Interaction</h2>
     <div class="video-grid">
@@ -366,15 +636,8 @@ margin: 0;
     </div>
   </section>
 
-</body>
-</html>
-}
-.
-}
-</style>
-
 <section class="testimonials"> 
-  <h2>What People Say</h2> 
+  <h2>Testimonial</h2> 
   <div class="testimonial-slider"> 
     <div class="testimonial"> 
       <p>"Juliet Ibrahim is an exceptional planner whose creativity and commitment to sustainable development inspire confidence."</p> 
@@ -488,10 +751,7 @@ document.querySelector('.prev').addEventListener('click', () => {
   current = (current - 1 + testimonials.length) % testimonials.length;
   testimonials[current].classList.add('active');
 });
-</script>
-
-
-  <!-- Projects Section -->
+</script></script>  <!-- Projects Section -->
   <section class="section" id="projects">
     <h2>Projects</h2>
     <div class="projects">
@@ -533,32 +793,335 @@ document.querySelector('.prev').addEventListener('click', () => {
       </div>
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
 
-<!-- Education Section -->
-  <section class="section" id="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Professional Diploma in Urban & Regional Planning</strong> — Kaduna Polytechnic</li>
-      <li><strong>National Diploma in Urban & Regional Planning</strong> — Federal Polytechnic Idah</li>
-      <li><strong>Higher National Diploma in Urban & Regional Planning</strong> — Federal Polytechnic Idah</li>
-    </ul>
-  </section>
+    /* Section wrapper */
+    section {
+      margin: 40px auto;
+      max-width: 900px;
+      padding: 40px;
+      background: #fff;
+      border-radius: 8px;
+    }
 
-  <!-- Certifications Section -->
-<section class="section" id="certifications">
-  <h2>Certifications</h2>
-  <ul>
-    <li>🌱 <strong>AGNES Climate Leadership Fellowship</strong> — African Group of Negotiators Experts Support (AGNES) Climate Leadership Fellow</li>
-    <li> <strong>United Nations SDSN Nigeria – Climate Champion</strong> — Recognized for contributions to sustainable development and climate resilience</li>
-    <li>🎓 <strong>Oxford School of Climate</strong> — Specialized training in climate science, policy, and leadership</li>
-    <li>📊 <strong>Certified Data Analyst</strong> — Excel, Power BI, SQL, and Python</li>
-    <li>🛰️ <strong>GIS for Climate Resilience</strong> — Applied Geospatial Training</li>
-    <li>🌍 <strong>Climate Advocacy & Leadership</strong> — Youth Climate Council Nigeria</li>
-    <li>💻 <strong>Woman Techsters Fellow</strong> — Class of 2025–2026</li>
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      color: #16a085;
+      margin-bottom: 30px;
+    }
+
+    /* Timeline container */
+    .timeline {
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Vertical line */
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 45px;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: #16a085;
+    }
+
+    /* Timeline item */
+    .timeline-item {
+      position: relative;
+      margin-bottom: 40px;
+      padding-left: 120px; /* pushes text away from icon */
+    }
+
+    /* Icon styling */
+    .timeline-item .icon {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #16a085;
+      color: #fff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    /* Content card */
+    .timeline-item .content {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .timeline-item strong {
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Section wrapper */
+    section {
+      margin: 40px auto;
+      max-width: 900px;
+      padding: 40px;
+      background: #fff;
+      border-radius: 8px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      color: #16a085;
+      margin-bottom: 30px;
+    }
+
+    /* Timeline container */
+    .timeline {
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Vertical line */
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 45px;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: #16a085;
+    }
+
+    /* Timeline item */
+    .timeline-item {
+      position: relative;
+      margin-bottom: 40px;
+      padding-left: 120px; /* pushes text away from icon */
+    }
+
+    /* Icon styling */
+    .timeline-item .icon {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #16a085;
+      color: #fff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    /* Content card */
+    .timeline-item .content {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .timeline-item strong {
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+
+<section class="section" id="education">
+  <h2 class="edu-heading">Education</h2>
+  <ul class="edu-list">
+    <li><span class="degree">Professional Diploma in Urban & Regional Planning</span> — <span class="school">Kaduna Polytechnic</span></li>
+    <li><span class="degree">Higher National Diploma in Urban & Regional Planning</span> — <span class="school">Federal Polytechnic Idah</span></li>
+    <li><span class="degree">National Diploma in Urban & Regional Planning</span> — <span class="school">Federal Polytechnic Idah</span></li>
   </ul>
 </section>
 
-<section class="experience">
+<style>
+  .edu-heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #16a085; /* teal heading */
+    margin-bottom: 20px;
+  }
+
+  .edu-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .edu-list li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+  }
+
+  .degree {
+    font-weight: bold;
+    color: #2c3e50; /* dark gray for diplomas */
+  }
+
+  .school {
+    font-style: italic;
+    color: #16a085; /* teal for institutions */
+  }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Juliet's Portfolio - Certifications</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+    }
+
+    /* Certifications Section */
+    #certifications {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 40px;
+      background: #f1f8e9;
+      border-radius: 10px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    }
+
+    #certifications h2 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+
+    #certifications .intro {
+      text-align: center;
+      font-size: 1.1em;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .certifications-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .cert-item {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cert-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .cert-item strong {
+      color: #388e3c;
+      font-size: 18px;
+    }
+
+    .cert-item p {
+      margin-top: 8px;
+      font-size: 0.95em;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Certifications Section -->
+  <section class="section" id="certifications">
+    <h2>📜 Certifications</h2>
+    <p class="intro">
+      A showcase of my professional training, fellowships, and recognitions in climate leadership, technology, and data.
+    </p>
+    <div class="certifications-list">
+      <div class="cert-item">
+        🌱 <strong>AGNES Climate Leadership Fellowship</strong>
+        <p>African Group of Negotiators Experts Support (AGNES) Climate Leadership Fellow</p>
+      </div>
+      <div class="cert-item">
+        🇺🇳 <strong>United Nations SDSN Nigeria – Climate Champion</strong>
+        <p>Recognized for contributions to sustainable development and climate resilience</p>
+      </div>
+      <div class="cert-item">
+        🎓 <strong>Oxford School of Climate</strong>
+        <p>Specialized training in climate science, policy, and leadership</p>
+      </div>
+      <div class="cert-item">
+        📊 <strong>Certified Data Analyst</strong>
+        <p>Excel, Power BI, SQL, and Python</p>
+      </div>
+      <div class="cert-item">
+        🛰️ <strong>GIS for Climate Resilience</strong>
+        <p>Applied Geospatial Training</p>
+      </div>
+      <div class="cert-item">
+        🌍 <strong>Climate Advocacy & Leadership</strong>
+        <p>Youth Climate Council Nigeria</p>
+      </div>
+      <div class="cert-item">
+        💻 <strong>Woman Techsters Fellow</strong>
+        <p>Class of 2025–2026</p>
+      </div>
+      <div class="cert-item">
+        👩🏽‍💻 <strong>Arewa Ladies for Tech Fellow</strong>
+        <p>Sponsored by Data Science Nigeria — advancing women in technology and data innovation</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html></style><section class="experience">
   <h2> Experience</h2>
   
   <h3>Energy & Climate Experience</h3>
@@ -639,34 +1202,202 @@ document.querySelector('.prev').addEventListener('click', () => {
 </style>
 
 <!-- Awards Section -->
-  <section class="section" id="awards">
-    <h2>Awards & Recognition</h2>
-    <ul>
-      <li>🏆 <strong>Climate Champion of Nigeria</strong> — UN Sustainable Development Solutions Network (SDSN)</li>
-      <li>🌟 <strong>Outstanding Urban Planner Award</strong> — Kaduna Polytechnic Alumni Association</li>
-      <li>📣 <strong>Community Impact Award</strong> — Youth Climate Council Nigeria</li>
-    </ul>
-  </section>
+<section class="section" id="awards">
+  <h2 class="awards-heading">Awards & Recognition</h2>
+  <div class="timeline">
+    <div class="timeline-item left">
+      <span class="icon">🏆</span>
+      <div class="content">
+        <strong>Climate Champion of Nigeria</strong><br>
+        UN Sustainable Development Solutions Network (SDSN)
+      </div>
+    </div>
+    <div class="timeline-item right">
+      <span class="icon">🌟</span>
+      <div class="content">
+        <strong>Outstanding Urban Planner Award</strong><br>
+        Kaduna Polytechnic Alumni Association
+      </div>
+    </div>
+    <div class="timeline-item left">
+      <span class="icon">📣</span>
+      <div class="content">
+        <strong>Community Impact Award</strong><br>
+        Youth Climate Council Nigeria
+      </div>
+    </div>
+  </div>
+</section>
 
+<style>
+  #awards {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #f9f9f9;
+    border-radius: 8px;
+  }
 
+  .awards-heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #16a085; /* teal brand color */
+    margin-bottom: 30px;
+  }
 
+  .timeline {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
 
- <!-- Contact Section -->
-  <section class="section" id="contact">
-    <h2>Contact</h2>
-    <p>If you’d like to collaborate, discuss projects, or learn more about my work, feel free to reach out:</p>
-    <ul style="list-style: none; padding: 0;">
-      <li><i class="fas fa-envelope"></i> <strong>Email:</strong> 
-        <a href="mailto:julietoguche@gmail.com">julietoguche@gmail.com</a>
-      </li>
-      <li><i class="fas fa-phone"></i> <strong>Phone:</strong> +2347057747465</li>
-      <li><i class="fas fa-phone-alt"></i> <strong>Alternate Phone:</strong> +2348140921402</li>
-      <li><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> 
-        <a href="https://www.linkedin.com/in/juliet-ibrahim-00787860" target="_blank">
-          https://www.linkedin.com/in/juliet-ibrahim-00787860
-        </a>
-      </li>
-    </ul>
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #16a085; /* teal vertical line */
+    transform: translateX(-50%);
+  }
+
+  .timeline-item {
+    position: relative;
+    width: 45%;
+    margin-bottom: 40px;
+    opacity: 0; /* hidden initially */
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+  }
+
+  .timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .timeline-item.left {
+    left: 0;
+    text-align: right;
+  }
+
+  .timeline-item.right {
+    left: 55%;
+    text-align: left;
+  }
+
+  .timeline-item .icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #16a085;
+    color: #fff;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .timeline-item .content {
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .timeline-item strong {
+    color: #2c3e50;
+  }
+</style>
+
+<script>
+  // Scroll animation for awards timeline
+  const awardItems = document.querySelectorAll('#awards .timeline-item');
+
+  const awardObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  awardItems.forEach(item => {
+    awardObserver.observe(item);
+  });
+</script><!-- Contact Section -->
+<section class="section" id="contact">
+  <h2>Contact</h2>
+  <p>If you’d like to collaborate, discuss projects, or learn more about my work, feel free to reach out:</p>
+  
+  <div class="contact-icons">
+    <a href="mailto:julietoguche@gmail.com" class="icon email" title="Email Me">
+      <i class="fas fa-envelope"></i>
+      <span>Email</span>
+    </a>
+    <a href="https://www.linkedin.com/in/juliet-ibrahim-00787860" target="_blank" class="icon linkedin" title="Connect on LinkedIn">
+      <i class="fab fa-linkedin"></i>
+      <span>LinkedIn</span>
+    </a>
+  </div>
+</section>
+
+<!-- Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+  /* Contact Section Styling */
+  #contact {
+    padding: 50px;
+    background-color: #16a085; /* teal brand color */
+    text-align: center;
+    color: white; /* ensure text is readable */
+  }
+
+  #contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white; /* contrast with teal background */
+  }
+
+  #contact p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #f9f9f9; /* lighter text for readability */
+  }
+
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+  }
+
+  .contact-icons .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5em;
+    color: white; /* icons visible on teal background */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .contact-icons .icon span {
+    font-size: 0.9em;
+    margin-top: 8px;
+    color: #f9f9f9;
+  }
+
+  .contact-icons .icon.email:hover {
+    color: #ffd9b3; /* lighter orange shade on hover */
+  }
+
+  .contact-icons .icon.linkedin:hover {
+    color: #0a66c2; /* LinkedIn blue */
+  }
+</style>
   </section>
 <div class="newsletter">
   <h3>Juliet Ibrahim Newsletter</h3>
@@ -706,6 +1437,8 @@ document.querySelector('.prev').addEventListener('click', () => {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
+
+
 
 style>
   .opportunities {
@@ -754,25 +1487,8 @@ style>
 }
 
 
-  <h2>🌍 Latest Opportunities</h2> 
-  <ul class="slider">
-    <li class="active">📢 Climate Fellowship applications open until <strong>March 15</strong></li>
-    <li>🌱 Community tree‑planting event in <strong>Abuja – Feb 20</strong></li>
-    <li>💡 Call for volunteers: Plastic reduction campaign</li>
-  </ul> 
-  <p style="margin-top:15px; font-style:italic; color:#555;"> Check back here for new updates every month! </p> 
-</div>
-
-<script>
-let i = 0;
-const items = document.querySelectorAll('.slider li');
-setInterval(() => {
-  items.forEach(item => item.classList.remove('active'));
-  items[i].classList.add('active');
-  i = (i + 1) % items.length;
-}, 3000);
-</script>
-
+ 
+    
 
   <!-- Publications Section -->
   <section class="section" id="publications">
@@ -801,37 +1517,148 @@ setInterval(() => {
         <a href="https://www.iiardjournals.org/get/IJGEM/VOL.%209%20NO.%205%202023/FLOOD%20CONTROL%20IN%20KADUNA%20SOUTH.pdf" 
            class="btn btn-secondary" target="_blank">📄 Download Full Paper</a>
         <a href="https://www.iiardjournals.org/abstract.php?j=IJGEM&pn=Flood%20Control%20in%20Kaduna%20South%20L.G.A,%20Kaduna%20State,%20Nigeria,%20Using%20the%20Ecohydrological%20Principles%20&id=3982" 
-           class="btn" target="_blank">🌐 View Online           
+           class="btn" target="_blank">🌐 View Online
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Slider</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ecf0f1;
+      margin: 0;
+      padding: 0;
+    }
 
+    #blog {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .blog-heading {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: #16a085;
+      margin-bottom: 20px;
+    }
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .blog-post {
+      min-width: 100%;
+      background: #fff;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .post-title {
+      font-size: 22px;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    .post-meta {
+      font-size: 14px;
+      color: #7f8c8d;
+      margin-bottom: 15px;
+    }
+    .post-content p {
+      font-size: 16px;
+      color: #34495e;
+      margin-bottom: 15px;
+    }
+    .post-content h4 {
+      font-size: 18px;
+      color: #16a085;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
 
+  <!-- Blog Section -->
+  <section id="blog">
+    <h2 class="blog-heading">Blog</h2>
+    <div class="slider" id="slider">
 
+      <!-- Blog Post 1: Full Drafted Article -->
+      <article class="blog-post">
+        <h3 class="post-title">How Data Analytics Drives Climate Action</h3>
+        <p class="post-meta">Published on Feb 4, 2026 by Juliet Ibrahim</p>
+        <div class="post-content">
+          <p>
+            Climate change is one of the greatest challenges of our time, and tackling it requires more than passion—it demands precision. This is where data analytics comes in. By transforming raw information into actionable insights, data analytics empowers governments, organizations, and communities to make smarter decisions for a sustainable future.
+          </p>
 
+          <h4>Turning Numbers into Narratives</h4>
+          <p>
+            Every dataset tells a story. From satellite imagery tracking deforestation to temperature records showing rising heat waves, analytics helps us interpret these signals. Tools like Power BI, SQL, and Python allow climate experts to visualize trends, identify risks, and communicate findings in ways that inspire action.
+          </p>
 
+          <h4>Predicting Climate Risks</h4>
+          <p>
+            Predictive models are changing the game. By analyzing historical data, we can forecast floods, droughts, and extreme weather events with greater accuracy. This enables communities to prepare in advance, saving lives and reducing economic losses.
+          </p>
 
+          <h4>Driving Policy and Advocacy</h4>
+          <p>
+            Policymakers rely on evidence to craft effective climate strategies. Data analytics provides that evidence—whether it’s showing the impact of emissions on air quality or mapping vulnerable populations. With clear, data-backed insights, advocacy becomes more persuasive and policies more impactful.
+          </p>
 
+          <h4>Empowering Local Communities</h4>
+          <p>
+            Beyond global conferences and government reports, data analytics also empowers local communities. Farmers can use climate data to plan crop cycles, while city planners can design greener infrastructure. When data is shared openly, it becomes a tool for collective resilience.
+          </p>
 
+          <h4>Conclusion</h4>
+          <p>
+            Climate action is no longer just about raising awareness—it’s about making informed, strategic choices. Data analytics bridges the gap between knowledge and action, turning information into solutions. As technology advances, its role in building a sustainable future will only grow stronger.
+          </p>
+        </div>
+      </article>
 
-                           
-      
+      <!-- Blog Post 2 -->
+      <article class="blog-post">
+        <h3 class="post-title">GIS and Mapping for Sustainability</h3>
+        <p class="post-meta">Published on Jan 20, 2026</p>
+        <div class="post-content">
+          <p>
+            Geospatial data helps us visualize climate risks and plan for resilient communities. Mapping tools allow policymakers and citizens to see vulnerabilities clearly and design sustainable solutions.
+          </p>
+        </div>
+      </article>
 
+      <!-- Blog Post 3 -->
+      <article class="blog-post">
+        <h3 class="post-title">Women in Tech: My Journey</h3>
+        <p class="post-meta">Published on Dec 15, 2025</p>
+        <div class="post-content">
+          <p>
+            As a Woman Techsters Fellow, I’ve learned how technology can empower women to lead in sustainability. My journey shows how inclusion in tech drives innovation and resilience.
+          </p>
+        </div>
+      </article>
 
+    </div>
+  </section>
 
+  <script>
+    const slider = document.getElementById('slider');
+    let index = 0;
+    function slideBlog() {
+      index++;
+      if (index >= slider.children.length) index = 0;
+      slider.style.transform = translateX(-${index * 100}%);
+    }
+    setInterval(slideBlog, 4000); // auto-slide every 4 seconds
+  </script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</body>
+</html>
